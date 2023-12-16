@@ -26,8 +26,7 @@
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<div class="text-center">
 	<h1>Real-Time Speech Synthesis:</h1>
-        <h4> Revealing Consistency Models and Weighted
-Samplers in Neural TTS for Enhanced Efficiency</h4>
+        <h4> Enhancing Real Time Text-to-Speech Synthesis Efficiency through Weighted Samplers and Consistency Models</h4>
 
         <p class="fst-italic mb-0">
 			<br>
@@ -36,18 +35,15 @@ Samplers in Neural TTS for Enhanced Efficiency</h4>
         </p>
         <p><b></b></p>
 	</div>
+	<style>
+    p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+	</style>
 	<p>
         <b>Abstract.</b> 
-		While text-to-speech (TTS) systems (e.g., NaturalSpeech) have achieved high speech quality on single-speaker recording-studio datasets, these datasets are
-not enough to capture the diversity in human speech such as speaker identities, prosodies, styles (e.g., singing). When scaling to large-scale, multi-speaker, and in-
-the-wild datasets, current TTS systems usually quantize speech into discrete tokens and use language models to generate these tokens one by one, which suffer from
-unstable prosody, word skipping/repeating issue, and poor voice quality. In this paper, we develop NaturalSpeech 2, a TTS system that uses a latent diffusion model
-to synthesize natural voices with high expressiveness/robustness/fidelity and strong zero-shot ability. Specifically, we leverage a neural audio codec with residual
-vector quantizers to reconstruct speech waveform and get the quantized latent vectors, and then use a diffusion model to generate these latent vectors conditioned
-on text input. To enhance the zero-shot capability, we design a speech prompting mechanism to facilitate in-context learning in the duration/pitch predictor and
-diffusion model. We scale NaturalSpeech 2 to large-scale datasets with 44K hours of speech and singing data and evaluate its voice quality on unseen (zero-shot)
-speakers. NaturalSpeech 2 outperforms previous TTS systems by a large margin in terms of prosody/timbre similarity, robustness, and voice quality, and can perform
-novel zero-shot singing synthesis with only a speech prompt.
+		Neural Text-to-Speech (TTS) systems find broad applications in voice assistants, e-learning, and audiobook creation. The pursuit of advanced models, like Diffusion Models, holds promise for achieving high-fidelity, real-time speech synthesis. Yet, the efficiency of multi-step sampling in Diffusion Models presents challenges. Efforts have been made to integrate GANs with DMs, speeding up inference by approximating denoising distributions, but this introduces issues with model convergence due to adversarial training. To overcome this, we introduce CM-TTS, a novel architecture grounded in consistency models. Drawing inspiration from continuous-time diffusion models, CM-TTS achieves top-quality speech synthesis in fewer steps without adversarial training or pre-trained model dependencies. Our weighted samplers ensure unbiased training, preserving the advantages of Diffusion-based TTS. We present a real-time mel-spectrogram generation consistency model, validated through comprehensive evaluations. Experimental results underscore CM-TTS 's superiority over existing single-step speech synthesis systems, representing a significant advancement in the field.
 		<br>
 
 		<br>
