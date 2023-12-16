@@ -26,14 +26,15 @@
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<div class="text-center">
 	<h1>Real-Time Speech Synthesis:</h1>
-        <h4> Revealing Consistency Models and Weighted samplers in Neural TTS for Enhanced Efficiency</h4>
+        <h4> Revealing Consistency Models and Weighted
+Samplers in Neural TTS for Enhanced Efficiency</h4>
 
         <p class="fst-italic mb-0">
 			<br>
-			Anonymous Submission <br>
+			 <br>
 			<p></p>
         </p>
-        <p><b>Anonymous Submission</b></p>
+        <p><b></b></p>
 	</div>
 	<p>
         <b>Abstract.</b> 
@@ -50,7 +51,7 @@ novel zero-shot singing synthesis with only a speech prompt.
 		<br>
 
 		<br>
-			This page is <b> for research demonstration purposes </b> only.
+			This page is <b>intended</b>  solely for the purpose of research demonstration.
 		<br>
 
       </p>
@@ -387,43 +388,69 @@ novel zero-shot singing synthesis with only a speech prompt.
 </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-	<h2 id="LJSpeech Mel-spectrogram Comparison" style="text-align: center;">Overview</h2>
-	<p>
+	<h2 id="LJSpeech Mel-spectrogram Comparison" style="text-align: center;">LJSpeech Mel-spectrogram Comparison</h2>
+  <div class="row">
+    <div class="col container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+      <p style="text-align: center; font-size: 24px; margin-top: 28px;">
 		Ground Truth.
 	</p>
-	<body>
+		<body>
 		<p style="text-align: center;">
-			<img src="audio/LJpng/LJ050-0033_hifgan.png" width="800">
+			<img src="audio/LJpng/LJ050-0033_hifgan.png" width="400">
 		</p>
-	</body>
-	<p>
+		</body>
+		<p style="text-align: center; font-size: 24px;">
 		DiffGAN-TTS.
 	</p>
-	<body>
+		<body>
 		<p style="text-align: center;">
-			<img src="audio/LJpng/LJ050-0033_gan.png" width="800">
+			<img src="audio/LJpng/LJ050-0033_gan.png" width="400">
 		</p>
 	</body>
-	<p>
+		<p style="text-align: center; font-size: 24px;">
 		CM-TTS.
 	</p>
-	<body>
+		<body>
 		<p style="text-align: center;">
-			<img src="audio/LJpng/LJ050-0033_cm.png" width="800">
+			<img src="audio/LJpng/LJ050-0033_cm.png" width="400">
 		</p>
 	</body>
-
-
+    </div>
+    <div class="col container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+      <p style="text-align: center; font-size: 24px; margin-top: 28px;">
+		Ground Truth.
+	</p>
+		<body>
+		<p style="text-align: center;">
+			<img src="audio/LJpng/LJ026-0116_hifgan.png" width="485">
+		</p>
+		</body>
+		<p style="text-align: center; font-size: 24px;">
+		DiffGAN-TTS.
+	</p>
+		<body>
+		<p style="text-align: center;">
+			<img src="audio/LJpng/LJ026-0116_gan.png" width="485">
+		</p>
+	</body>
+		<p style="text-align: center; font-size: 24px;">
+		CM-TTS.
+	</p>
+		<body>
+		<p style="text-align: center;">
+			<img src="audio/LJpng/LJ026-0116_cm.png" width="485">
+		</p>
+	</body>
+    </div>
+  </div>
 </div>
-
-
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">	
 	<h2 id=Ethics-Statement style="text-align: center;">	
 		Ethics Statement
 	</h2>
 	<p>
-		Since NaturalSpeech2 could synthesize speech that maintains speaker identity, it may carry potential risks in misuse of the model, such as spoofing voice identification or impersonating a specific speaker. We conducted the experiments under the assumption that the user agree to be the target speaker in speech synthesis. If the model is generalized to unseen speakers in the real world, it should include a protocol to ensure that the speaker approves the use of their voice and a synthesized speech detection model.
+		Given the ability of CM-TTS to synthesize speech while preserving the speaker's identity, potential risks of misuse, such as deceiving voice recognition systems or impersonating specific individuals, may arise. In our experiments, we operate under the assumption that users willingly agree to be the designated speaker for speech synthesis. In the event of the model's application to unknown speakers in real-world scenarios, it is imperative to establish a protocol ensuring explicit consent from speakers for the utilization of their voices. Additionally, implementing a synthetic speech detection model is recommended to mitigate the potential for misuse.
 	</p>
 </div>
 
